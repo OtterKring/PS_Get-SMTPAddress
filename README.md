@@ -27,8 +27,8 @@ If you are working with an imported exchange session or Exchange Online, you mus
     Get-Mailbox mcfly | select emailaddresses | ?{$_ -like 'SMTP:*'}
 
 And, of course, you need to know, which type of object you need to check: mailbox, remotemailbox, mailuser, mailcontact, distribution group or dynamic distribution group. *Except* you use `Get-Recipients` from the start, but that still requires the filtering.
-
-
+<br>
+<br>
 Enter...
 
 ### Get-SMTPAddress [-PrimaryOnly]
@@ -42,9 +42,9 @@ No matter if you are using Exchange Management Console, Exchange Online or an im
 To get a sorted list of all smtp address of the requested object, let by the PrimarySMTPAddress. The latter can singled out by using the switch `-PrimaryOnly`.
 
 Pipeline is supported, of course.
-
-
-
+<br>
+<br>
+<br>
 I hope this will save you a couple of seconds each day, too.
 
 Happy coding!<br>
